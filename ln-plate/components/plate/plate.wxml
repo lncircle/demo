@@ -1,0 +1,65 @@
+<view class='ln_plate_container' hidden="{{!isShow}}">
+  <view class="ln_plate_header">
+    <view class="ln_plate_close" bindtap="_closlePlateKeybord">关闭</view>
+  </view>
+  <view class="ln_plate_key">
+    <view class="ln_plate_key_f" hidden="{{keyBoardInputIndex != 0}}">
+      <view class="ln_plate_word_1">
+        <view class="ln_plate_word_item" wx:for="{{k_word_1}}" bindtap="_clickWord" data-value="{{item}}" wx:key="car_num" wx:for-item="item">
+          {{item}}
+        </view>
+      </view>
+      <view class="ln_plate_word_2">
+        <view class="ln_plate_word_item" wx:for="{{k_word_2}}" bindtap="_clickWord" data-value="{{item}}" wx:key="car_num" wx:for-item="item">
+          {{item}}
+        </view>
+      </view>
+      <view class="ln_plate_word_3">
+        <view class="ln_plate_word_item" wx:for="{{k_word_3}}" bindtap="_clickWord" data-value="{{item}}" wx:key="car_num" wx:for-item="item">
+          {{item}}
+        </view>
+      </view>
+      <view class="ln_plate_word_4">
+        <view class="ln_plate_word_item" wx:for="{{k_word_4}}" bindtap="_clickWord" data-value="{{item}}" wx:key="car_num" wx:for-item="item">
+          {{item}}
+        </view>
+      </view>
+    
+    </view>
+
+    <view  class="ln_plate_key_s" hidden="{{keyBoardInputIndex == 0}}">
+      <view class="ln_plate_word_5">
+        <view class="ln_plate_word_item" wx:for="{{k_word_5}}" bindtap="_clickWord"  data-value="{{item}}" wx:key="car_num" wx:for-item="item"  wx:if="{{keyBoardInputIndex != 1}}">
+          {{item}}
+        </view>
+        <view class="ln_plate_word_item disable'" wx:for="{{k_word_5}}" wx:key="car_num" wx:for-item="item" wx:if="{{keyBoardInputIndex == 1}}">
+          {{item}}
+        </view>
+      </view>
+      <view class="ln_plate_word_6">
+        <view class="ln_plate_word_item" wx:for="{{k_word_6}}"  bindtap="_clickWord"  data-value="{{item}}" wx:key="car_num" wx:for-item="item">
+          {{item}}
+        </view>
+      </view>
+      <view class="ln_plate_word_7">
+        <view class="ln_plate_word_item" wx:for="{{k_word_7}}"  bindtap="_clickWord"  data-value="{{item}}" wx:key="car_num" wx:for-item="item">
+          {{item}}
+        </view>
+      </view>
+      <view class="ln_plate_word_8">
+        <view class="ln_plate_word_item" wx:for="{{k_word_8}}" bindtap="_clickWord"  data-value="{{item}}" wx:key="car_num" wx:for-item="item" wx:if="{{!((keyBoardInputIndex != 7) && (index > 3))}}">
+          {{item}}
+        </view>
+        <view class="ln_plate_word_item disable" wx:for="{{k_word_8}}" wx:if="{{(keyBoardInputIndex != 7) && (index > 3)}}" wx:key="car_num" wx:for-item="item">
+          {{item}}
+        </view>
+      </view>
+    
+    </view>
+
+    <view class="ln_plate_key_del" bindtap="deleteWord">
+      <image class="ln_plate_key_img" src="./img/plate_icon_delete.png"></image>
+    </view>
+
+  </view>
+</view>

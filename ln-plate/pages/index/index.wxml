@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="car_num_content">
+    <view class="car_num_box" wx:for="{{car_num}}"  wx:key="car_num" wx:for-item="item">
+      <view class="car_num_value car_num_input {{index == current_index ? 'active':''}}" wx:if="{{index != 2 && index != 8}}" bindtap="selectInput" data-index="{{index}}">{{item}}</view>
+      <view wx:if="{{index == 2}}">·</view>
+      <view class="car_num_input1 {{item.length > 1 ? '':'car_num_value'}} {{index == current_index ? 'active':''}}" wx:if="{{index == 8}}" bindtap="selectInput" data-index="{{index}}">{{item}}</view>
+    </view>
+  </view>
+  <plate id='plate'
+    isShow="{{isShow}}"
+    keyBoardInputIndex="{{current_index}}"
+    bind:deleteWord="_deleteWord"
+    bind:clickWord="_clickWord">
+  </plate>
+</view>

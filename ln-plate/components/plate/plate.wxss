@@ -1,0 +1,100 @@
+.ln_plate_container {
+  background-color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 540rpx;
+}
+
+/* 关闭栏 */
+
+.ln_plate_header {
+  height: 76rpx;
+  border-top: 1rpx solid #D9D9D9;
+  position: relative;
+}
+
+.ln_plate_close {
+  height: 100%;
+  width: 120rpx;
+  text-align: center;
+  line-height: 76rpx;
+  position: absolute;
+  right: 0;
+  font-size:30rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+}
+
+/* 键盘 */
+
+.ln_plate_key {
+  height: 464rpx;
+  background-color: rgba(221,222,226,1);
+  overflow: hidden;
+  position: relative;
+  padding: 6rpx 0;
+}
+
+.ln_plate_word_1,.ln_plate_word_2,.ln_plate_word_3,.ln_plate_word_4 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  padding: 0 10rpx;
+}
+
+.ln_plate_word_2 {
+  padding: 0 47rpx;
+}
+
+.ln_plate_word_3 {
+  padding: 0 121rpx;
+}
+
+.ln_plate_word_4 {
+  padding: 0 193rpx;
+}
+
+.ln_plate_word_5,.ln_plate_word_6,.ln_plate_word_7,.ln_plate_word_8 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  padding: 0 10rpx;
+}
+
+.ln_plate_word_8 {
+  padding: 0 230rpx 0 10rpx;
+}
+
+.ln_plate_word_item {
+  width:66rpx;
+  height:86rpx;
+  background:rgba(255,255,255,1);
+  box-shadow:0rpx 2rpx 5rpx 0rpx rgba(0,0,0,0.12);
+  border-radius:8rpx;
+  text-align: center;
+  line-height: 86rpx;
+}
+
+.disable {
+  background:rgba(236,236,236,1);
+}
+
+.ln_plate_key_del {
+  width:138rpx;
+  height:86rpx;
+  background:rgba(255,255,255,1);
+  box-shadow:0rpx 2rpx 5rpx 0rpx rgba(0,0,0,0.12);
+  border-radius:8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 8rpx;
+  bottom: 46rpx;
+}
+
+.ln_plate_key_img{
+  width: 51rpx;
+  height: 37rpx;
+}

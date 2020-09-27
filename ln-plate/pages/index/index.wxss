@@ -1,0 +1,44 @@
+.car_num_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40rpx;
+  width: 100%;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+
+.car_num_input {
+  width:71rpx;
+  height:90rpx;
+  border-radius:2rpx;
+  border:2rpx solid rgba(217,217,217,1);
+  text-align: center;
+  line-height: 90rpx;
+}
+
+.car_num_input1{
+  width:71rpx;
+  height:90rpx;
+  border-radius:2rpx;
+  border:2rpx dashed rgba(217,217,217,1);
+  text-align: center;
+  line-height: 90rpx;
+
+  font-size:18rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+  font-weight:400;
+  color:rgba(190,190,190,1);
+}
+
+.active {
+  border:2rpx solid rgba(217,217,217,1);
+  border-color: #FBCE07;
+}
+
+.car_num_value {
+  font-size:36rpx;
+  font-family:PingFangSC-Semibold,PingFang SC;
+  font-weight:600;
+  color:rgba(0,0,0,1);
+}
