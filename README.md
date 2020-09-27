@@ -1,34 +1,7 @@
-####
+
 ------------
+
 ###微信小程序车牌键盘
-
-整体效果示例
-
-![](./img/ln-plate_04.gif)
-
-###使用方式
-
-json文件配置：在需要引用的页面json文件中配置,其中的plate名字可自定义，路径填写实际路径
-
-```
-{
-  "usingComponents": {
-    "plate" : "/components/plate/plate"
-  }
-}
-```
-
-wxml文件引入：plate标签是json文件自定义的对应名字
-
-```
-<plate id='plate'
-	isShow="{{isShow}}"
-	keyBoardInputIndex="{{current_index}}"
-	bind:deleteWord="_deleteWord"
-	bind:clickWord="_clickWord">
-</plate>
-```
-
 
 属性
 
