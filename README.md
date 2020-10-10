@@ -1,7 +1,7 @@
 
 ------------
 
-###微信小程序车牌键盘
+微信小程序车牌键盘
 
 属性
 
@@ -16,5 +16,7 @@
 |  ----  | ----  | ---- |
 | deleteWord  | 	删除按钮按下的时候触发 |微信事件 |
 | clickWord  | 点击车牌输入按钮时触发 | 微信事件,通过 e.detail.word 取得输入字符 |
+
+[demo](https://github.com/lncircle/demo/tree/master/ln-plate)
 
 ------------
